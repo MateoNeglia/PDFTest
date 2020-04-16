@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TablaComponent } from './tabla/tabla.component';
 
 @Component({
   selector: 'app-root',

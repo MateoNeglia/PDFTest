@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { TablaComponent } from './tabla/tabla.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TablaComponent
   ],
   imports: [
     BrowserModule

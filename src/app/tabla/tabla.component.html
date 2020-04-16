@@ -1,0 +1,29 @@
+<h1>Table Example for PDF</h1>
+
+<form id="frm1" class="card">
+
+  <div class="card-body">
+    <table class="table table-striped">
+      <thead>
+        <tr class="row">
+          <th>ID</th>
+          <th>Cliente</th>
+          <th>Matriz</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let row of rows">
+          <td *ngFor = "let column of headers">
+            {{row[column]}}
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+  <div>
+    <button id="pdfButton" type="button" class="btn btn-primary" style="margin: 10px" (click)="imprimirLista()">Make PDF</button>
+
+  </div>
+
+</form>
