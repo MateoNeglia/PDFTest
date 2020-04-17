@@ -1,5 +1,6 @@
 <h1>Table Example for PDF</h1>
 
+<<base href="/tabla">
 <form id="frm1" class="card">
 
   <div class="card-body">
@@ -22,8 +23,27 @@
     </table>
   </div>
   <div>
-    <button id="pdfButton" type="button" class="btn btn-primary" style="margin: 10px" (click)="imprimirLista()">Make PDF</button>
+    <button id="pdfButton" type="button" class="btn btn-primary" style="margin: 10px" (click)="imprimirLista()">Save PDF</button>
 
   </div>
 
+  <div>
+    <button id="pdfButton" type="button" class="btn btn-primary" style="margin: 10px" (click)="generarPdf()">Open in a new Tab</button>
+
+  </div>
+
+  <div>
+    <button id="pdfButton" type="button" class="btn btn-primary" style="margin: 10px" (click)="generateImage()">Open as Image</button>
+
+  </div>
+  <div>
+    <button id="pdfButton" type="button" class="btn btn-primary" style="margin: 10px" (click)="onPrintInvoice()">Print</button>
+
+  </div>
+
+
+
+
+
 </form>
+
